@@ -16,6 +16,8 @@ if(!numSort.includes(num)) {
 }
 
 console.log(numSort)
+document.getElementById("sorteados").innerHTML = numSort
+contarAcertos()
 
 }
 
@@ -36,4 +38,15 @@ console.log(numEsco)
 
 function verAcertos() {
     
+}
+
+function contarAcertos() {
+    let cont = 0;
+    numEsco.forEach(function(value, index){
+        if (numSort.includes(value)) {
+            cont++;
+        }
+    } )
+
+    console.log(cont)
 }
