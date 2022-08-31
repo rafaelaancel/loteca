@@ -16,7 +16,7 @@ if(!numSort.includes(num)) {
 }
 
 console.log(numSort)
-document.getElementById("sorteados").innerHTML = numSort
+document.getElementById("sorteados").innerHTML = numSort()
 contarAcertos()
 
 }
